@@ -1,0 +1,202 @@
+body
+{
+    overflow: hidden;
+}
+.catamaran
+{
+    font-family: 'Catamaran';
+}
+.white
+{
+    color:white;
+}
+
+.gray
+{
+    color:gray;
+}
+
+#image-iphone
+{
+    width: 600px;
+    /*margin:0 auto !important;*/
+    /*margin-top: -280px !important;*/
+}
+
+#section-home
+{
+    height: 70vh !important;
+    text-align: left !important;
+
+}
+
+#header
+{
+    background-color: #f2f2f5;
+    height:5vh;
+}
+
+/*Home*/
+
+#main-content
+{
+    padding-top: 80px;
+    text-align: left !important;
+    height:80vh;
+}
+
+#main-content>h1
+{
+    font-size: 50px;
+    font-weight: 200;
+    display: block;
+    font-family: 'Catamaran';
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#main-content>h2
+{
+    font-family: 'Catamaran';
+    color: gray;
+    font-size: 30px;
+}
+
+#main-content>h5
+{
+    font-family: 'Catamaran';
+    color: gray;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#main-content>h5>img
+{
+    width: 30px;
+}
+
+#about-text
+{
+    display: block;
+    margin-bottom: 40px;
+}
+
+#about-text>p
+{
+    font-family: 'Catamaran';
+    color:gray;
+}
+
+#fb-signup
+{
+    background-color: #3b5998;
+    color: #fff;
+    font-size: 20px !important;
+    padding: 5px 16px;
+    border-radius: 80px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+
+#users
+{
+    display: block;
+    margin-top: 30px;
+}
+
+#users p
+{
+    font-weight: 400;
+}
+
+#users p span.bold
+{
+    font-weight: 700;
+}
+
+
+
+/* PRIVACY */
+
+#privacy
+{
+    height: 70vh;
+}
+
+#privacy>h1
+{
+    text-align: center;
+    margin: 40px auto 20px;
+}
+#privacy>h5
+{
+    text-align: center;
+    margin: 20px auto 40px;
+    font-weight: 200;
+}
+
+#privacy p
+{
+    text-align: justify;
+}
+
+
+/* FOOTER */
+
+#footer
+{
+    position: absolute;
+    left:0;
+    width: 100%;
+    bottom:10px;
+}
+
+#footer>div
+{
+    margin: 0 auto;
+    text-align:center;
+}
+
+#links>a
+{
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+/*Resp*/
+@media (max-width: 980px)
+{
+    #main-content>span
+    {
+        text-align: left !important;
+        font-size: 20px;
+    }
+    #image-iphone
+    {
+        width: 100%;
+        margin-top: 100px;
+    }
+    #main-content
+    {
+        padding-right:30px;
+        padding-top: 160px;
+    }
+
+}
+@media (max-width: 560px)
+{
+    #image_iphone
+    {
+        width: 120%;
+        margin-top: 140px;
+    }
+}	
+
