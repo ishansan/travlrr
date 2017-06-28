@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travlrr</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./assets/parallax/smartscroll.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+	<link rel="icon" href="./assets/images/logo.png" type="image/png" />
+	<link rel="stylesheet" href="http://morphext.fyianlai.com/assets/css/morphext.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+	<style type="text/css">
+		body
+		{
+			overflow: hidden;
+		}
+		.main-font
+		{
+			font-family: 'Catamaran';
+		}
+		.main-color
+		{
+			color:white;
+		}
+		/*Section 1*/
+		#section-1
+		{
+			background: url(./assets/images/background.jpg);
+			background-size: cover;
+			text-align: center;
+			padding-top: 200px;
+		}
+		#section-1>span
+		{
+			display: block;
+		}
+		#text-subhead
+		{
+			padding-top: 30px;
+		}
+		/*section 2*/
+		#section-2
+		{
+			background-color: #eee;
+		}
+		#image_iphone
+		{
+			width: 600px;
+			margin-left: -190px;
+			margin-top: -280px;
+		}
+		#travlrr_about
+		{
+			padding-top: 200px;
+		}
+		/*section 3*/
+		#section-3
+		{
+			background-color: yellow;
+			text-align: left !important;
+			padding-left: 200px;
+		}
+		#section-3>span
+		{
+			text-align: left !important;
+			font-size: 30px;
+		}
+		.cwhite
+		{
+			color:gray;
+		}
+		#cmain
+		{
+			display: block;
+			color: gray;
+			margin-bottom: 20px;
+		}
+		#journey-text
+		{
+			display: block;
+			margin-bottom: 30px;
+		}
+		#fb-signup
+		{
+			background-color: #3b5998;
+			color: #fff;
+			font-size: 20px !important;
+			padding-left: 16px;
+			padding-right: 16px;
+			border-radius: 80px;
+			cursor: pointer;
+			padding-top: 4px;
+			padding-bottom: 5x;
+		}
+		#terms-text
+		{
+			font-size: 16px !important;
+			margin-left: 12px;
+		}
+		#coming_soon
+		{
+			display: block;
+			font-size: 17px !important;
+			margin-top: 80px;
+		}
+		#users
+		{
+			display: block;
+			margin-top: 10px;
+		}
+		#users>img
+		{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			margin-left: 10px;
+
+		}
+	</style>
+</head>
+<body>
+<div id="main-section">
+	<!-- <div class="section-scroll" id="section-1">
+		<h1 class="main-font main-color" id="text-head">Travlrr</h1>
+		<span class="main-font main-color" id="js-rotating">Construye tu historia, あなたの物語を構築する,Leaving Home never sound better,建立你的故事</span>
+		<h4 class="main-font main-color" id="text-subhead">Coming soon on <b>android</b> and <b>iOS</b></h4>
+	</div> -->
+	<!-- <div class="row section-scroll" id="section-2">
+		<div class="col col-lg-6 col-md-6 col-xs-6 col-sm-6">
+			
+		</div>
+		<div class="col col-lg-6 col-md-6 col-xs-6 col-sm-6" id="travlrr_about">
+			<h1 class="main-font cwhite">Namaste<br><br>Travlrr is about moments<br>that you will never forget.</h1>
+		</div>
+	</div> -->
+	<div class="section-scroll" id="section-3">
+		<img src="./assets/images/iphone.png" alt="Travlrr Application" id="image_iphone">
+		<span class="main-font main-color" id="cmain"><span  id="js-rotating">Construye tu historia, あなたの物語を構築する,Build your story,建立你的故事</span>  <span class="cwhite">- Travlrr</span></span>
+		<span class="main-font cwhite" id="journey-text">The journey of a thousand miles, begins with a <b>Sign up</b></span>
+		<span class="main-font" id="fb-signup">Join with Facebook</span>
+		<span class="main-font cwhite" id="terms-text">By signing up, you agree to enjoy your life (from now on)</span>
+		<span class="main-font cwhite" id="coming_soon">Coming soon on <b>android</b> and <b>iOS</b></span>
+		<span id="users" style="display: none;"><img src="./assets/images/pp.jpg" style="margin-left:0px !important;"><img src="./assets/images/pp.jpg"><img src="./assets/images/pp.jpg"><img src="./assets/images/pp.jpg"></span>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="./assets/parallax/smartscroll.min.js"></script>
+<script src="http://morphext.fyianlai.com/assets/js/morphext.js"></script>
+<script type="text/javascript">
+		$.smartscroll({
+			mode:"vp",
+			sectionScroll: true,
+			initialScroll: true,
+			sectionWrapperSelector: "#main-section",
+			sectionClass: "section-scroll",
+			animationSpeed: 400,
+			autoHash: false,
+			dynamicHeight: false,
+			bindSwipe: true,
+			bindKeyboard:true
+		});
+		$("#js-rotating").Morphext({
+		    animation: "flipInX",
+		    separator: ",",
+		    speed: 3000,
+		    complete: function () {
+		    }
+		});
+</script>
+</body>
+</html>
