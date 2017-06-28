@@ -46,8 +46,8 @@
 		#image_iphone
 		{
 			width: 600px;
-			margin-left: -190px;
-			margin-top: -280px;
+			/*margin:0 auto !important;*/
+			/*margin-top: -280px !important;*/
 		}
 		#travlrr_about
 		{
@@ -56,11 +56,14 @@
 		/*section 3*/
 		#section-3
 		{
-			background-color: yellow;
+			background-color: #fff;
 			text-align: left !important;
-			padding-left: 200px;
 		}
-		#section-3>span
+		.section-3
+		{
+			padding-top: 200px;
+		}
+		.section-3>span
 		{
 			text-align: left !important;
 			font-size: 30px;
@@ -118,32 +121,70 @@
 		{
 			font-size: 16px;
 		}
+		#users>b
+		{
+			font-weight: 600;
+		}
+		/*Resp*/
+		@media (max-width: 980px)
+		{
+			.section-3>span
+		{
+			text-align: left !important;
+			font-size: 20px;
+		}
+		#image_iphone
+		{
+			width: 100%;
+			margin-top: 100px;
+		}
+		#s32
+		{
+			/*background-color: yellow;*/
+			padding-right:30px;
+			padding-top: 160px;
+		}
+		#terms-text
+		{
+			display: block;
+			margin-left: 0px;
+			margin-top: 10px;
+		}
+		}
+		@media (max-width: 560px)
+		{
+		#image_iphone
+		{
+			width: 120%;
+			margin-top: 140px;
+		}
+		}	
+		#s31
+		{
+			/*background-color: red;*/
+		}
+		#s32
+		{
+			/*background-color: yellow;*/
+			height:100vh;
+		}
 	</style>
 </head>
 <body>
 <div id="main-section">
-	<!-- <div class="section-scroll" id="section-1">
-		<h1 class="main-font main-color" id="text-head">Travlrr</h1>
-		<span class="main-font main-color" id="js-rotating">Construye tu historia, あなたの物語を構築する,Leaving Home never sound better,建立你的故事</span>
-		<h4 class="main-font main-color" id="text-subhead">Coming soon on <b>android</b> and <b>iOS</b></h4>
-	</div> -->
-	<!-- <div class="row section-scroll" id="section-2">
-		<div class="col col-lg-6 col-md-6 col-xs-6 col-sm-6">
-			
-		</div>
-		<div class="col col-lg-6 col-md-6 col-xs-6 col-sm-6" id="travlrr_about">
-			<h1 class="main-font cwhite">Namaste<br><br>Travlrr is about moments<br>that you will never forget.</h1>
-		</div>
-	</div> -->
-	<div class="section-scroll" id="section-3">
-		<img src="./assets/images/iphone.png" alt="Travlrr Application" id="image_iphone">
-		<span class="main-font main-color" id="cmain"><span  id="js-rotating">Construye tu historia, あなたの物語を構築する,Build your story,建立你的故事</span>  <span class="cwhite">- Travlrr</span></span>
-		<span class="main-font cwhite" id="journey-text">The journey of a thousand miles, begins with a <b>Sign up</b></span>
-		<span class="main-font" id="fb-signup">Join with Facebook</span>
-		<span class="main-font cwhite" id="terms-text">By signing up, you agree to enjoy your life (from now on)</span>
-		<span class="main-font cwhite" id="coming_soon">Coming soon on <b>android</b> and <b>iOS</b></span>
-		<span id="users" class="main-font cwhite">@niki: Travllr is the synonym for adventure,@ahmed: Found the best chinese in Bangalore!</span>
-	</div>
+	<div class="row section-scroll" id="section-3">
+			<div class="col col-lg-4 col-md-6 col-xs-6 col-sm-6" id="s31">
+				<img src="./assets/images/iphone.png" alt="Travlrr Application" id="image_iphone">
+			</div>
+			<div class="col col-lg-8 col-md-6 col-xs-6 col-sm-6 section-3" id="s32">
+			<span class="main-font main-color" id="cmain"><span  id="js-rotating">Construye tu historia, あなたの物語を構築する,Build your story,建立你的故事</span>  <span class="cwhite">- Travlrr</span></span>
+			<span class="main-font cwhite" id="journey-text">The journey of a thousand miles, begins with a <b>Sign up</b></span>
+			<span class="main-font" id="fb-signup">Join with Facebook</span>
+			<span class="main-font cwhite" id="terms-text">By signing up, you agree to enjoy your life (from now on)</span>
+			<span class="main-font cwhite" id="coming_soon">Coming soon on <b>android</b> and <b>iOS</b></span>
+			<span id="users" class="main-font cwhite"><b>@niki:</b> Travllr is the synonym for adventure,@ahmed: Found the best chinese in Bangalore!</span>
+			</div>
+	</div>		
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="./assets/parallax/smartscroll.min.js"></script>
@@ -170,7 +211,7 @@
 		    }
 		});
 		$("#users").Morphext({
-		    animation: "fadeInLeft",
+		    animation: "fadeInRight",
 		    separator: ",",
 		    speed: 3000,
 		    complete: function () {
