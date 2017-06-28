@@ -113,8 +113,10 @@
 			width: 30px;
 			height: 30px;
 			border-radius: 50%;
-			margin-left: 10px;
-
+		}
+		#users>span
+		{
+			font-size: 16px;
 		}
 	</style>
 </head>
@@ -140,12 +142,13 @@
 		<span class="main-font" id="fb-signup">Join with Facebook</span>
 		<span class="main-font cwhite" id="terms-text">By signing up, you agree to enjoy your life (from now on)</span>
 		<span class="main-font cwhite" id="coming_soon">Coming soon on <b>android</b> and <b>iOS</b></span>
-		<span id="users" style="display: none;"><img src="./assets/images/pp.jpg" style="margin-left:0px !important;"><img src="./assets/images/pp.jpg"><img src="./assets/images/pp.jpg"><img src="./assets/images/pp.jpg"></span>
+		<span id="users" class="main-font cwhite">@niki: Travllr is the synonym for adventure,@ahmed: Found the best chinese in Bangalore!</span>
 	</div>
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="./assets/parallax/smartscroll.min.js"></script>
 <script src="http://morphext.fyianlai.com/assets/js/morphext.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript">
 		$.smartscroll({
 			mode:"vp",
@@ -165,6 +168,17 @@
 		    speed: 3000,
 		    complete: function () {
 		    }
+		});
+		$("#users").Morphext({
+		    animation: "fadeInLeft",
+		    separator: ",",
+		    speed: 3000,
+		    complete: function () {
+		    }
+		});
+		$(document).ready(function()
+		{
+			$('[data-toggle="tooltip"]').tooltip(); 
 		});
 </script>
 </body>
